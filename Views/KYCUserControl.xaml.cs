@@ -18,11 +18,13 @@ namespace BankingApp.Views
     /// <summary>
     /// Interaction logic for KYCUserControl.xaml
     /// </summary>
-    public partial class KYCUserControl : UserControl
+    public partial class KYCUserControl
     {
+        private static KYCUserControl Instance;
         public KYCUserControl()
         {
             InitializeComponent();
         }
+        public static KYCUserControl GetSingletonInstance()=>Instance??(Instance = new KYCUserControl());
     }
 }

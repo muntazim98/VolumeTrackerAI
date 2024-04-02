@@ -18,11 +18,13 @@ namespace BankingApp.Views
     /// <summary>
     /// Interaction logic for HomeUserControl.xaml
     /// </summary>
-    public partial class HomeUserControl : UserControl
+    public partial class HomeUserControl
     {
+        private static HomeUserControl Instance;
         public HomeUserControl()
         {
             InitializeComponent();
         }
+        public static HomeUserControl GetSingletonInstance()=>Instance??(Instance=new HomeUserControl());
     }
 }

@@ -38,8 +38,15 @@
     <ApplicationIcon>volumeTracker.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Enums.NET, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7ea1c1650d506225, processorArchitecture=MSIL">
+      <HintPath>packages\Enums.NET.4.0.2\lib\net45\Enums.NET.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -58,17 +65,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Enums\BankType.cs" />
+    <Compile Include="Models\TabItemTemplate.cs" />
+    <Compile Include="Models\TabItemTitle.cs" />
+    <Compile Include="Utilities\BankUtility.cs" />
     <Compile Include="Views\AccountClosureUserControl.xaml.cs">
       <DependentUpon>AccountClosureUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\AccountOpeningUserControl.xaml.cs">
       <DependentUpon>AccountOpeningUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\BarodaBankUserControl.xaml.cs">
+      <DependentUpon>BarodaBankUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HDFCBankUserControl.xaml.cs">
+      <DependentUpon>HDFCBankUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\HomeUserControl.xaml.cs">
       <DependentUpon>HomeUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\KYCUserControl.xaml.cs">
       <DependentUpon>KYCUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SBIBankUserControl.xaml.cs">
+      <DependentUpon>SBIBankUserControl.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -90,11 +110,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\BarodaBankUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HDFCBankUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\HomeUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\KYCUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SBIBankUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -114,9 +146,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -136,6 +169,17 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="volumeTracker.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Baroda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\HDFC.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SBI.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

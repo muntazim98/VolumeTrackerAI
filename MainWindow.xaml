@@ -4,50 +4,37 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BankingApp"
+        xmlns:resource="clr-namespace:BankingApp.Properties"
         mc:Ignorable="d"
-        Title="Volume Tracker" Background="Transparent" FontWeight="ExtraBold"
+        xmlns:models="clr-namespace:BankingApp.Models"
+        Title="{x:Static resource:Resources.LangKeyVolumeTracker}"
         Height="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Height}"
         Width="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width}"
+        WindowStartupLocation="CenterScreen"
         ResizeMode="CanResize" WindowState="Maximized">
-    <Window.Resources>
-        <Style TargetType="Button" x:Key="TabButtonStyle">
-            <Style.Triggers>
-                <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="Green"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </Window.Resources>
-    <Grid>
-        <Border Grid.RowSpan="2">
-            <Border.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="#7be9f6" Offset="0.0"/>
-                    <GradientStop Color="DarkMagenta" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
-        </Border>
-        <StackPanel Orientation="Vertical">
-            <StackPanel>
-                <Image Source="/Components/Images/mobile-banking.png" Width="100" Height="150"   />
-                <TextBlock Text="WELCOME TO BANKING MANAGEMENT" Foreground="White"
-                         FontFamily="helvetica"
-                         FontWeight="SemiBold"
-                           FontSize="30" HorizontalAlignment="Center"
-                           />
-            </StackPanel>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" Height="100" >
-                <Button Margin="20" FontWeight="ExtraBold" Content="Home" Click="Tab1_Click" Width="250" Style="{StaticResource TabButtonStyle}" Background="LightBlue" />
-                <Button Margin="20" FontWeight="ExtraBold" Content="Account Opening" Click="Tab2_Click" Width="250" Style="{StaticResource TabButtonStyle}" Background="LightBlue"/>
-                <Button Margin="20" FontWeight="ExtraBold" Content="Account Re-KYC" Click="Tab3_Click" Width="250" Style="{StaticResource TabButtonStyle}" Background="LightBlue"/>
-                <Button Margin="20" FontWeight="ExtraBold" Content="Account Closure" Click="Tab4_Click" Width="250" Style="{StaticResource TabButtonStyle}" Background="LightBlue"/>
-            </StackPanel>
-            <StackPanel Grid.Row="2" Width="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width}"
-                        Height="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width}" >
-                <ContentControl x:Name="contentControl" 
-                                Width="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width}"
-                                Height="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width}"/>
-            </StackPanel>
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal"
+                    Margin="10"
+                    Grid.Row="0"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Label Content="{x:Static resource:Resources.LangKeySelectBank}"
+                   FontSize="13" FontWeight="DemiBold"/>
+            <ComboBox HorizontalContentAlignment="Center"
+                      VerticalContentAlignment="Center"
+                      Width="200"
+                      SelectedItem="{Binding SelectedBank}"
+                      Margin="2"
+                      Name="SelectBankComoBox"
+                      MaxDropDownHeight="100"
+                      SelectedIndex="0"
+                      Foreground="Blue"
+                      Height="30"/>
         </StackPanel>
+        <UserControl Grid.Row="1" Content="{Binding SelectedTab.TabContent.Value}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
     </Grid>
 </Window>

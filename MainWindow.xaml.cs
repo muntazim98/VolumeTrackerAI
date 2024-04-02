@@ -1,53 +1,86 @@
-﻿using BankingApp.Views;
+﻿using BankingApp.Enums;
+using BankingApp.Models;
+using BankingApp.Utilities;
+using BankingApp.Views;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace BankingApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window,INotifyPropertyChanged
     {
+        private List<TabItemTemplate> _tabItems;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private TabItemTemplate _SelectedTab;
+        public TabItemTemplate SelectedTab { get=>_SelectedTab; set { _SelectedTab = value;OnPropertyChanged(nameof(SelectedTab));} }
+        private string _SelectedBank;
+        public string SelectedBank {  get=>_SelectedBank; set { _SelectedBank = value;OnPropertyChanged(nameof(SelectedBank)); } }
         public MainWindow()
         {
             InitializeComponent();
+            MainGrid.DataContext = this;
+            var banks = GetBanksName();
+            SelectBankComoBox.ItemsSource = banks;
+            SelectedBank = SelectedBank ?? banks.FirstOrDefault();
+            InitializeTabControls();
+            SelectedTab = SelectedTab ?? _tabItems.FirstOrDefault();
+            SelectBankComoBox.SelectionChanged += OnSelectionChanged;
         }
-        private void Tab1_Click(object sender, RoutedEventArgs e)
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
-            LoadUserControl(new HomeUserControl()); // Replace UserControl1 with your UserControl
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-        private void Tab2_Click(object sender, RoutedEventArgs e)
+        private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            LoadUserControl(new AccountOpeningUserControl()); // Replace UserControl2 with your UserControl
-        }
-
-        private void Tab3_Click(object sender, RoutedEventArgs e)
-        {
-            LoadUserControl(new KYCUserControl()); // Replace UserControl3 with your UserControl
-        }
-
-        private void Tab4_Click(object sender, RoutedEventArgs e)
-        {
-            LoadUserControl(new AccountClosureUserControl()); // Replace UserControl4 with your UserControl
+            var bankName = sender as ComboBox;
+            SelectedTab = _tabItems.FirstOrDefault(x=>x.BankName==bankName.SelectedValue);
         }
 
-        private void LoadUserControl(UserControl userControl)
+        private List<string>GetBanksName()
         {
-            contentControl.Content = userControl;
+            var names = new List<string>();
+            var EnumsValues = Enum.GetValues(typeof(BankType)).Cast<BankType>();
+            foreach (var enumValue in EnumsValues)
+                names.Add(BankUtility.GetEnumDescription(enumValue));
+            return names;
+        }
+
+        private void InitializeTabControls()
+        {
+            try
+            {
+                _tabItems = new List<TabItemTemplate>
+                {
+                    new TabItemTemplate
+                    {
+                        BankName=BankUtility.GetEnumDescription(BankType.SBI),
+                        TabContent = new Lazy<UserControl>(SBIBankUserControl.GetSingletonInstance)
+                    },
+                    new TabItemTemplate
+                    {
+                        BankName=BankUtility.GetEnumDescription(BankType.Baroda),
+                        TabContent = new Lazy<UserControl>(BarodaBankUserControl.GetSingletonInstance)
+                    },
+                    new TabItemTemplate
+                    {
+                        BankName = BankUtility.GetEnumDescription(BankType.HDFC),
+                        TabContent = new Lazy<UserControl>(HDFCBankUserControl.GetSingletonInstance)
+                    }
+                };
+            }
+            catch
+            {
+
+            }
         }
     }
 }
