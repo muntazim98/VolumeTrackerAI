@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using BankingApp.Properties;
 using System.Windows.Controls;
 namespace BankingApp.Views
 {
@@ -34,20 +33,23 @@ namespace BankingApp.Views
                 {
                     new TabItemTemplate
                     {
-                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyHome},
-                        TabContent = new Lazy<System.Windows.Controls.UserControl>(HomeUserControl.GetSingletonInstance)
+                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyHome,ImageUrl="/BankingApp;component/Images/Home.jpg"},
+                        TabContent = new Lazy<UserControl>(HomeUserControl.GetSingletonInstance)
                     },
                     new TabItemTemplate
                     {
-                        TabContent = new Lazy<System.Windows.Controls.UserControl>(AccountOpeningUserControl.GetSingletonInstance)
+                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyAccountOpening,ImageUrl="/BankingApp;component/Images/AccountOpening.jpg"},
+                        TabContent = new Lazy<UserControl>(AccountOpeningUserControl.GetSingletonInstance)
                     },
                     new TabItemTemplate
                     {
-                        TabContent = new Lazy<System.Windows.Controls.UserControl>(AccountClosureUserControl.GetSingletonInstance)
+                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyAccountClosure,ImageUrl="/BankingApp;component/Images/AccountClosure.jpg"},
+                        TabContent = new Lazy<UserControl>(AccountClosureUserControl.GetSingletonInstance)
                     },
                     new TabItemTemplate
                     {
-                        TabContent = new Lazy<System.Windows.Controls.UserControl>(KYCUserControl.GetSingletonInstance)
+                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyReKycOfCustomer,ImageUrl="/BankingApp;component/Images/KYC.jpg"},
+                        TabContent = new Lazy<UserControl>(KYCUserControl.GetSingletonInstance)
                     }
                 };
         }

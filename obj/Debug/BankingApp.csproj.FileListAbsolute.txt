@@ -77,10 +77,16 @@ C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\BankingApp.g.resources
 C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\BankingApp.Properties.Resources.resources
 C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\BankingApp.csproj.GenerateResource.cache
 C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\BankingApp.csproj.CoreCompileInputs.cache
-C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\BankingApp.csproj.Up2Date
 C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\BankingApp.exe
 C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\BankingApp.pdb
 C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\Views\BarodaBankUserControl.g.cs
 C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\Views\HDFCBankUserControl.g.cs
 C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\Views\BarodaBankUserControl.baml
 C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\Views\HDFCBankUserControl.baml
+C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\BankingApp.csproj.CopyComplete
+C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\App.baml
+C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\home.png
+C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\AccountClosure.jpg
+C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\AccountOpening.jpg
+C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\Home.jpg
+C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\KYC.jpg

@@ -12,23 +12,23 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TabControl Grid.Row="0" Margin="5" Name="MainWindowTabs" SelectedValue="{Binding SelectedTab,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+        <TabControl Grid.Row="0" Margin="5" Name="MainWindowTabs" SelectedValue="{Binding SelectedTab,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                    ItemContainerStyle="{StaticResource TabItemStyle}">
             <TabControl.ItemTemplate>
-                <DataTemplate DataType="{x:Type  models:TabItemTitle}">
-                    <StackPanel Orientation="Vertical" Margin="10,5,10,5">
-                        <TextBlock Text="{Binding Title}"/>
-                        <Ellipse Width="60" Height="60">
-                            <Ellipse.Fill>
-                                <ImageBrush ImageSource="{Binding ImageUrl}" Stretch="Fill"/>
-                            </Ellipse.Fill>
-                        </Ellipse>
-                    </StackPanel>
+                <DataTemplate DataType="{x:Type  models:TabItemTemplate}">
+                    <Border x:Name="TabItemBorder">
+                        <Rectangle Width="100" Height="100" Margin="5">
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource="{Binding TabTitle.ImageUrl}" Stretch="Fill"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    </Border>
                 </DataTemplate>
             </TabControl.ItemTemplate>
             <TabControl.ContentTemplate>
                 <DataTemplate DataType="{x:Type  models:TabItemTemplate}">
                     <Grid>
-                        <UserControl Content="{Binding TabContent.Value}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                        <UserControl Margin="5" BorderThickness="0" Content="{Binding TabContent.Value}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
                     </Grid>
                 </DataTemplate>
             </TabControl.ContentTemplate>
