@@ -18,30 +18,13 @@ namespace BankingApp.Views
     /// <summary>
     /// Interaction logic for KYCUserControl.xaml
     /// </summary>
-    public partial class KYCUserControl : UserControl
+    public partial class KYCUserControl
     {
+        private static KYCUserControl Instance;
         public KYCUserControl()
         {
             InitializeComponent();
         }
-        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            TextBox textBox = sender as TextBox;
-            if (textBox.Text == "Enter text here...")
-            {
-                textBox.Text = string.Empty;
-                textBox.Foreground = Brushes.Black; // Change text color to black
-            }
-        }
-
-        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
-        {
-            TextBox textBox = sender as TextBox;
-            if (string.IsNullOrWhiteSpace(textBox.Text))
-            {
-                textBox.Text = "Enter text here...";
-                textBox.Foreground = Brushes.Gray; // Change text color to gray
-            }
-        }
+        public static KYCUserControl GetSingletonInstance()=>Instance??(Instance = new KYCUserControl());
     }
 }

@@ -18,11 +18,13 @@ namespace BankingApp.Views
     /// <summary>
     /// Interaction logic for AccountClosureUserControl.xaml
     /// </summary>
-    public partial class AccountClosureUserControl : UserControl
+    public partial class AccountClosureUserControl 
     {
+        private static AccountClosureUserControl Instance;
         public AccountClosureUserControl()
         {
             InitializeComponent();
         }
+        public static AccountClosureUserControl GetSingletonInstance() => Instance ?? (Instance = new AccountClosureUserControl());
     }
 }

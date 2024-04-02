@@ -4,132 +4,56 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BankingApp.Views"
-             mc:Ignorable="d" Background="White" >
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="800">
 
-    <Grid x:Name="MainGrid">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Menu Grid.Row="0">
-            <MenuItem Header="Home"/>
-            <MenuItem Header="Account Opening"/>
-            <MenuItem Header="Account Closure"/>
-            <MenuItem Header="Re-KYC of customer"/>
-        </Menu>
-       
-        <StackPanel Grid.Row="1"  Margin="10">
-            <TextBlock Text="Basic Details" FontWeight="Bold" FontSize="14"/>
+    <Grid Background="AliceBlue" Height="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Orientation="Vertical" Background="Gray" Margin="20 20 20 20">
+            
+            <TextBlock Text="First Name" Padding="10" Margin="10 0" FontWeight="Bold"/>
+            <TextBox Padding="10" Margin="20 0 20 10"></TextBox>
+            <TextBlock Text="Middle Name" Padding="10" Margin="10 0" FontWeight="Bold"/>
+            <TextBox Padding="10" Margin="20 0 20 10"></TextBox>
+            <TextBlock Text="Last Name" Padding="10" Margin="10 0" FontWeight="Bold"/>
+            <TextBox Padding="10" Margin="20 0 20 10"></TextBox>
+            <TextBlock Text="Phone Name" Padding="10" Margin="10 0" FontWeight="Bold"/>
+            <TextBox Padding="10" Margin="20 0 20 10"></TextBox>
+            <TextBlock Text="Mobile Name" Padding="10" Margin="10 0" FontWeight="Bold"/>
+            <TextBox Padding="10" Margin="20 0 20 10"></TextBox>
         </StackPanel>
-        <Grid Grid.Row="2"  Margin="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <StackPanel  Grid.Column="0"  >
-                <TextBox Margin="5" x:Name="firstName"
-         GotFocus="TextBox_GotFocus"
-         LostFocus="TextBox_LostFocus"
-         Foreground="Gray"
-         Text="First Name"/>
-            </StackPanel>
-            <StackPanel  Grid.Column="1"  >
-                <TextBox Margin="5" x:Name="middleName"
-         GotFocus="TextBox_GotFocus"
-         LostFocus="TextBox_LostFocus"
-         Foreground="Gray"
-         Text="Middle Name" />
-            </StackPanel>
-            <StackPanel Grid.Column="2"  >
-                <TextBox Margin="5" x:Name="lastName"
-         GotFocus="TextBox_GotFocus"
-         LostFocus="TextBox_LostFocus"
-         Foreground="Gray" BorderBrush="LightBlue" 
-         Text="Last Name" >
-                </TextBox>
-            </StackPanel>
-        </Grid>
-        <Grid Grid.Row="3"  Margin="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <StackPanel  Grid.Column="0"  >
-                <TextBox Margin="5" x:Name="fathersName"
-         GotFocus="TextBox_GotFocus"
-         LostFocus="TextBox_LostFocus"
-         Foreground="Gray"
-         Text="Fathers Name" />
-            </StackPanel>
-            <StackPanel  Grid.Column="1"  >
-                <TextBox Margin="5" x:Name="mothersName"
-         GotFocus="TextBox_GotFocus"
-         LostFocus="TextBox_LostFocus"
-         Foreground="Gray"
-         Text="Mothers Name" />
-            </StackPanel>
-        </Grid>
-        <Grid Grid.Row="4"  Margin="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <StackPanel  Grid.Column="0"  >
-                <TextBox Margin="5" x:Name="phoneNumber"
-         GotFocus="TextBox_GotFocus"
-         LostFocus="TextBox_LostFocus"
-         Foreground="Gray"
-         Text="Middle Name" />
-            </StackPanel>
-            <StackPanel  Grid.Column="1"  >
-                <TextBox Margin="5" x:Name="mobileNumber"
-         GotFocus="TextBox_GotFocus"
-         LostFocus="TextBox_LostFocus"
-         Foreground="Gray"
-         Text="Middle Name" />
-            </StackPanel>
-        </Grid>
+        <StackPanel Grid.Column="1" Orientation="Vertical" Background="Gray" Margin="20 20 20 20">
+            <TextBlock Text="Account Number" Padding="10" Margin="10 0" FontWeight="Bold"/>
+            <TextBox Padding="10" Margin="20 0 20 10"></TextBox>
+            <TextBlock Text="Father Name" Padding="10" Margin="10 0" FontWeight="Bold"/>
+            <TextBox Padding="10" Margin="20 0 20 10"></TextBox>
+            <TextBlock Text="Mother Name" Padding="10" Margin="10 0" FontWeight="Bold"/>
+            <TextBox Padding="10" Margin="20 0 20 10"></TextBox>
+            <TextBlock Text="Address" Padding="10" Margin="10 0" FontWeight="Bold"/>
+            <TextBox Padding="10" Margin="20 0 20 10" Height="120"></TextBox>
 
-        <StackPanel Grid.Row="5" Margin="10">
-            <TextBox Margin="5" x:Name="parmanentAddress"
-         GotFocus="TextBox_GotFocus"
-         LostFocus="TextBox_LostFocus"
-         Foreground="Gray" Height="100"
-         Text="Parmanent Address" />
-        </StackPanel>
-        <StackPanel Grid.Row="6" Margin="10">
-        <TextBox Margin="5" x:Name="accountNo"
-         GotFocus="TextBox_GotFocus"
-         LostFocus="TextBox_LostFocus"
-         Foreground="Gray"
-         Text="Account Number" />
+            <Button x:Name="Submit" Background="LightBlue"  Width="150" Height="50" FontWeight="ExtraBlack" Margin="100 80 0 0">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}" CornerRadius="10 10 10 10">
+                                        <Grid>
+                                            <TextBlock Text="Submit" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        </Grid>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+
+                    </Style>
+                </Button.Style>
+            </Button>
         </StackPanel>
 
-        <!-- Submit Button -->
-        <Button Width="150" Height="30" Grid.Row="7"  Background="Navy" HorizontalAlignment="Right" Margin="10" Padding="10" Foreground="White">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="Button">
-                                <Border Background="{TemplateBinding Background}" CornerRadius="3 3 3 3">
-                                    <Grid>
-                                        <TextBlock Text="Submit" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                                    </Grid>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-
-                </Style>
-            </Button.Style>
-        </Button>
     </Grid>
 </UserControl>

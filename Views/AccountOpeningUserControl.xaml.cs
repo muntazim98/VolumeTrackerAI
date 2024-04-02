@@ -18,11 +18,13 @@ namespace BankingApp.Views
     /// <summary>
     /// Interaction logic for AccountOpeningUserControl.xaml
     /// </summary>
-    public partial class AccountOpeningUserControl : UserControl
+    public partial class AccountOpeningUserControl 
     {
+        private static AccountOpeningUserControl Instance;
         public AccountOpeningUserControl()
         {
             InitializeComponent();
         }
+        public static AccountOpeningUserControl GetSingletonInstance() => Instance ?? (Instance = new AccountOpeningUserControl());
     }
 }

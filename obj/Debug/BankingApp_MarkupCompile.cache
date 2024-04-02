@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Globussoft\SouravSirProjects\VolumeTracker\VolumeTrackerAI\App.xaml
-5-1024232924
+81727872111
+31526397870
+162005529174
+16-1902216965
+MainWindow.xaml;Views\AccountClosureUserControl.xaml;Views\AccountOpeningUserControl.xaml;Views\BarodaBankUserControl.xaml;Views\HDFCBankUserControl.xaml;Views\HomeUserControl.xaml;Views\KYCUserControl.xaml;Views\SBIBankUserControl.xaml;
 
-9-1843420233
-13-1505183044
-MainWindow.xaml;Views\AccountClosureUserControl.xaml;Views\AccountOpeningUserControl.xaml;Views\HomeUserControl.xaml;Views\KYCUserControl.xaml;
-
-False
+True
 
