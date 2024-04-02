@@ -33,22 +33,22 @@ namespace BankingApp.Views
                 {
                     new TabItemTemplate
                     {
-                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyHome,ImageUrl="/BankingApp;component/Images/Home.jpg"},
+                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyHome,ImageUrl="/BankingApp;component/Images/HomeIcon.png"},
                         TabContent = new Lazy<UserControl>(HomeUserControl.GetSingletonInstance)
                     },
                     new TabItemTemplate
                     {
-                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyAccountOpening,ImageUrl="/BankingApp;component/Images/AccountOpening.jpg"},
+                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyAccountOpening,ImageUrl="/BankingApp;component/Images/AccountOpening.png"},
                         TabContent = new Lazy<UserControl>(AccountOpeningUserControl.GetSingletonInstance)
                     },
                     new TabItemTemplate
                     {
-                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyAccountClosure,ImageUrl="/BankingApp;component/Images/AccountClosure.jpg"},
+                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyAccountClosure,ImageUrl="/BankingApp;component/Images/AccountClosure.png"},
                         TabContent = new Lazy<UserControl>(AccountClosureUserControl.GetSingletonInstance)
                     },
                     new TabItemTemplate
                     {
-                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyReKycOfCustomer,ImageUrl="/BankingApp;component/Images/KYC.jpg"},
+                        TabTitle =new TabItemTitle{Title = Properties.Resources.LangKeyReKycOfCustomer,ImageUrl="/BankingApp;component/Images/KYC.png"},
                         TabContent = new Lazy<UserControl>(KYCUserControl.GetSingletonInstance)
                     }
                 };

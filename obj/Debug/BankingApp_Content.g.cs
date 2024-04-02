@@ -8,13 +8,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/accountclosure.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/accountopening.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/baroda.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/homeicon.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/accountclosure.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/kyc.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/accountopening.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/hdfc.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/home.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/home.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/kyc.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/sbi.png")]
 
 

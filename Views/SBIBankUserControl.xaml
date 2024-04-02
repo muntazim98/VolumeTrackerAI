@@ -13,23 +13,29 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TabControl Grid.Row="0" Margin="5" Name="MainWindowTabs" SelectedValue="{Binding SelectedTab,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                    BorderBrush="Transparent"
                     ItemContainerStyle="{StaticResource TabItemStyle}">
             <TabControl.ItemTemplate>
                 <DataTemplate DataType="{x:Type  models:TabItemTemplate}">
                     <Border x:Name="TabItemBorder">
-                        <Rectangle Width="100" Height="100" Margin="5">
-                            <Rectangle.Fill>
-                                <ImageBrush ImageSource="{Binding TabTitle.ImageUrl}" Stretch="Fill"/>
-                            </Rectangle.Fill>
-                        </Rectangle>
+                        <StackPanel Orientation="Vertical">
+                            <Ellipse Width="55" Height="55" Margin="5,0,5,2">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="{Binding TabTitle.ImageUrl}" Stretch="Fill"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Label Content="{Binding TabTitle.Title}" FontWeight="SemiBold" Margin="0,3,0,5"/>
+                        </StackPanel>
                     </Border>
                 </DataTemplate>
             </TabControl.ItemTemplate>
             <TabControl.ContentTemplate>
                 <DataTemplate DataType="{x:Type  models:TabItemTemplate}">
-                    <Grid>
-                        <UserControl Margin="5" BorderThickness="0" Content="{Binding TabContent.Value}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                    </Grid>
+                    <Border BorderBrush="LightBlue" BorderThickness="2" CornerRadius="10" Background="Transparent">
+                        <Grid>
+                            <UserControl Margin="5" BorderThickness="0" Content="{Binding TabContent.Value}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                        </Grid>
+                    </Border>
                 </DataTemplate>
             </TabControl.ContentTemplate>
         </TabControl>

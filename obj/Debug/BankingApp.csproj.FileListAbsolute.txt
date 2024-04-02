@@ -86,7 +86,7 @@ C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\Views\HDFCBankUserControl.baml
 C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\BankingApp.csproj.CopyComplete
 C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\App.baml
 C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\home.png
-C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\AccountClosure.jpg
-C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\AccountOpening.jpg
-C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\Home.jpg
-C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\KYC.jpg
+C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\HomeIcon.png
+C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\AccountClosure.png
+C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\KYC.png
+C:\Rahmatullah\Globussoft\VolumeTracker\bin\Debug\Images\AccountOpening.png
