@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|c:\\rahmatullah\\globussoft\\volumetracker\\views\\homeusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|solutionrelative:views\\homeusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|c:\\rahmatullah\\globussoft\\volumetracker\\views\\sbibankusercontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|solutionrelative:views\\sbibankusercontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|c:\\rahmatullah\\globussoft\\volumetracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|c:\\rahmatullah\\globussoft\\volumetracker\\views\\sbibankusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|solutionrelative:views\\sbibankusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|c:\\rahmatullah\\globussoft\\volumetracker\\views\\accountopeningusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|solutionrelative:views\\accountopeningusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|c:\\rahmatullah\\globussoft\\volumetracker\\views\\barodabankusercontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|solutionrelative:views\\barodabankusercontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|c:\\rahmatullah\\globussoft\\volumetracker\\views\\kycusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|solutionrelative:views\\kycusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|c:\\rahmatullah\\globussoft\\volumetracker\\views\\barodabankusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|solutionrelative:views\\barodabankusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|c:\\rahmatullah\\globussoft\\volumetracker\\views\\accountclosureusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|solutionrelative:views\\accountclosureusercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|c:\\rahmatullah\\globussoft\\volumetracker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1041BAD-5953-4C9A-A6A5-B01BF587FFED}|BankingApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,61 +51,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeUserControl.xaml",
-              "DocumentMoniker": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\HomeUserControl.xaml",
-              "RelativeDocumentMoniker": "Views\\HomeUserControl.xaml",
-              "ToolTip": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\HomeUserControl.xaml",
-              "RelativeToolTip": "Views\\HomeUserControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T11:23:11.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountOpeningUserControl.xaml",
-              "DocumentMoniker": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\AccountOpeningUserControl.xaml",
-              "RelativeDocumentMoniker": "Views\\AccountOpeningUserControl.xaml",
-              "ToolTip": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\AccountOpeningUserControl.xaml",
-              "RelativeToolTip": "Views\\AccountOpeningUserControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T11:22:09.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "KYCUserControl.xaml",
-              "DocumentMoniker": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\KYCUserControl.xaml",
-              "RelativeDocumentMoniker": "Views\\KYCUserControl.xaml",
-              "ToolTip": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\KYCUserControl.xaml",
-              "RelativeToolTip": "Views\\KYCUserControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T11:21:42.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountClosureUserControl.xaml",
-              "DocumentMoniker": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\AccountClosureUserControl.xaml",
-              "RelativeDocumentMoniker": "Views\\AccountClosureUserControl.xaml",
-              "ToolTip": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\AccountClosureUserControl.xaml",
-              "RelativeToolTip": "Views\\AccountClosureUserControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T11:19:01.943Z",
+              "Title": "SBIBankUserControl.xaml.cs",
+              "DocumentMoniker": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\SBIBankUserControl.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\SBIBankUserControl.xaml.cs",
+              "ToolTip": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\SBIBankUserControl.xaml.cs",
+              "RelativeToolTip": "Views\\SBIBankUserControl.xaml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T11:37:11.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
+              "Title": "SBIBankUserControl.xaml",
+              "DocumentMoniker": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\SBIBankUserControl.xaml",
+              "RelativeDocumentMoniker": "Views\\SBIBankUserControl.xaml",
+              "ToolTip": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\SBIBankUserControl.xaml",
+              "RelativeToolTip": "Views\\SBIBankUserControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T11:15:09.382Z",
+              "WhenOpened": "2024-04-02T11:37:09.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BarodaBankUserControl.xaml.cs",
+              "DocumentMoniker": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\BarodaBankUserControl.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\BarodaBankUserControl.xaml.cs",
+              "ToolTip": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\BarodaBankUserControl.xaml.cs",
+              "RelativeToolTip": "Views\\BarodaBankUserControl.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T11:37:03.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BarodaBankUserControl.xaml",
+              "DocumentMoniker": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\BarodaBankUserControl.xaml",
+              "RelativeDocumentMoniker": "Views\\BarodaBankUserControl.xaml",
+              "ToolTip": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\Views\\BarodaBankUserControl.xaml",
+              "RelativeToolTip": "Views\\BarodaBankUserControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-02T11:37:01.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Rahmatullah\\Globussoft\\VolumeTracker\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAiwD4AAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T11:36:56.573Z",
               "EditorCaption": ""
             }
           ]
