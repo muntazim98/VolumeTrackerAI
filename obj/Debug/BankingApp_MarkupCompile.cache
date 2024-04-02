@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Globussoft\BankingApp\obj\Debug\
+C:\Globussoft\SouravSirProjects\VolumeTracker\VolumeTrackerAI\obj\Debug\
 BankingApp
 none
 false
 DEBUG;TRACE
-D:\Globussoft\BankingApp\App.xaml
-51400689288
+C:\Globussoft\SouravSirProjects\VolumeTracker\VolumeTrackerAI\App.xaml
+5-1024232924
 
-9-45436234
-13-1310406943
+9-1843420233
+13-1505183044
 MainWindow.xaml;Views\AccountClosureUserControl.xaml;Views\AccountOpeningUserControl.xaml;Views\HomeUserControl.xaml;Views\KYCUserControl.xaml;
 
 False
