@@ -12,21 +12,21 @@
                             <Border Name="Border" BorderThickness="0" BorderBrush="Gainsboro" CornerRadius="5,5,0,0"
                             Margin="4">
                                 <ContentPresenter x:Name="ContentPresenter" VerticalAlignment="Center" HorizontalAlignment="Stretch"
-                                          ContentSource="Header" TextBlock.FontSize="18" />
+                                          ContentSource="Header" TextBlock.FontSize="18"/>
                             </Border>
                         </Grid>
-                        <!--<ControlTemplate.Triggers>
+                        <ControlTemplate.Triggers>
                             <Trigger Property="IsSelected" Value="True">
                                 <Setter TargetName="Border" Property="Background"
-                                Value="#003569" />
-                                <Setter Property="Foreground" Value="#64C9F4" />
+                                Value="#ffcccc" />
+                                <Setter Property="Foreground" Value="White" />
                             </Trigger>
                             <Trigger Property="IsSelected" Value="False">
                                 <Setter Property="Foreground" Value="#003569" />
                                 <Setter TargetName="Border" Property="Background"
                                 Value="white" />
                             </Trigger>
-                        </ControlTemplate.Triggers>-->
+                        </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>

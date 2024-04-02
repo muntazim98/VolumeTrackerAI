@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Rahmatullah\Globussoft\VolumeTracker\obj\Debug\
+C:\VolumeTracker\obj\Debug\
 BankingApp
 none
 false
 DEBUG;TRACE
-C:\Rahmatullah\Globussoft\VolumeTracker\App.xaml
+C:\VolumeTracker\App.xaml
 81961019922
-9974103893
+10-673952379
 16-286203794
-16-1414095841
+16441539831
 MainWindow.xaml;Views\AccountClosureUserControl.xaml;Views\AccountOpeningUserControl.xaml;Views\BarodaBankUserControl.xaml;Views\HDFCBankUserControl.xaml;Views\HomeUserControl.xaml;Views\KYCUserControl.xaml;Views\SBIBankUserControl.xaml;
 
 False

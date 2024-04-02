@@ -17,15 +17,21 @@
                     ItemContainerStyle="{StaticResource TabItemStyle}">
             <TabControl.ItemTemplate>
                 <DataTemplate DataType="{x:Type  models:TabItemTemplate}">
-                    <Border x:Name="TabItemBorder">
-                        <StackPanel Orientation="Vertical">
-                            <Ellipse Width="45" Height="45" Margin="5,0,5,2">
-                                <Ellipse.Fill>
-                                    <ImageBrush ImageSource="{Binding TabTitle.ImageUrl}" Stretch="Fill"/>
-                                </Ellipse.Fill>
-                            </Ellipse>
-                            <Label Content="{Binding TabTitle.Title}" FontWeight="SemiBold" Margin="0,3,0,5"/>
-                        </StackPanel>
+                    <Border x:Name="TabBorder" BorderThickness="2" BorderBrush="PaleVioletRed" CornerRadius="5">
+                        <Grid Background="Transparent" Name="TabGrid" Margin="4">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Orientation="Vertical" Grid.Row="0">
+                                <Ellipse Width="100" Height="70" Margin="5,0,5,2">
+                                    <Ellipse.Fill>
+                                        <ImageBrush ImageSource="{Binding TabTitle.ImageUrl}" />
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                            </StackPanel>
+                            <Label Grid.Row="1" HorizontalAlignment="Center" Content="{Binding TabTitle.Title}" FontWeight="SemiBold" Margin="0,3,0,5"/>
+                        </Grid>
                     </Border>
                 </DataTemplate>
             </TabControl.ItemTemplate>

@@ -11,6 +11,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/banklogo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/baroda.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/accountopening.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/homeicon1.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/homeicon.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/accountclosure.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/kyc.png")]
