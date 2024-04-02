@@ -15,7 +15,8 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <StackPanel>
+        <StackPanel VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
             <Image Source="/Components/Images/home.png" Width="100" Height="100"   />
             <TextBlock Text="WELCOME TO HOME PAGE" Foreground="White"
                          FontFamily="helvetica"

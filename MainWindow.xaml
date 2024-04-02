@@ -14,27 +14,10 @@
         ResizeMode="CanResize" WindowState="Maximized">
     <Grid Name="MainGrid">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal"
-                    Margin="10"
-                    Grid.Row="0"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Center">
-            <Label Content="{x:Static resource:Resources.LangKeySelectBank}"
-                   FontSize="13" FontWeight="DemiBold"/>
-            <ComboBox HorizontalContentAlignment="Center"
-                      VerticalContentAlignment="Center"
-                      Width="200"
-                      SelectedItem="{Binding SelectedBank}"
-                      Margin="2"
-                      Name="SelectBankComoBox"
-                      MaxDropDownHeight="100"
-                      SelectedIndex="0"
-                      Foreground="Blue"
-                      Height="30"/>
-        </StackPanel>
+        <Image Source="/Images/BankLogo.png" Grid.Row="0" Width="120" Height="120"/>
         <UserControl Grid.Row="1" Content="{Binding SelectedTab.TabContent.Value}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
     </Grid>
 </Window>

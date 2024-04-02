@@ -29,22 +29,14 @@ namespace BankingApp
             InitializeComponent();
             MainGrid.DataContext = this;
             var banks = GetBanksName();
-            SelectBankComoBox.ItemsSource = banks;
             SelectedBank = SelectedBank ?? banks.FirstOrDefault();
             InitializeTabControls();
             SelectedTab = SelectedTab ?? _tabItems.FirstOrDefault();
-            SelectBankComoBox.SelectionChanged += OnSelectionChanged;
         }
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var bankName = sender as ComboBox;
-            SelectedTab = _tabItems.FirstOrDefault(x=>x.BankName==bankName.SelectedValue);
-        }
-
         private List<string>GetBanksName()
         {
             var names = new List<string>();

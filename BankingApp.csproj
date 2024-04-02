@@ -171,6 +171,9 @@
     <Resource Include="volumeTracker.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\BankLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Baroda.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

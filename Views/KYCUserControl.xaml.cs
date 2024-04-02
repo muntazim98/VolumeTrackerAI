@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace BankingApp.Views
 {
@@ -25,6 +12,15 @@ namespace BankingApp.Views
         {
             InitializeComponent();
         }
-        public static KYCUserControl GetSingletonInstance()=>Instance??(Instance = new KYCUserControl());
+        public static KYCUserControl GetSingletonInstance() => Instance ?? (Instance = new KYCUserControl());
+        private void Submit_Click(object sender, RoutedEventArgs e)
+        {
+            if (!(string.IsNullOrEmpty(firstname.Text) || string.IsNullOrEmpty(lastname.Text) || string.IsNullOrEmpty(middlename.Text) ||
+                string.IsNullOrEmpty(gender.Text) || string.IsNullOrEmpty(mobileno.Text) || string.IsNullOrEmpty(accountnumber.Text) ||
+                string.IsNullOrEmpty(address.Text) || string.IsNullOrEmpty(fathername.Text)))
+                MessageBox.Show("Account Created Successfully", "Success", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+            else
+                MessageBox.Show("All fields are mandatory", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
     }
 }

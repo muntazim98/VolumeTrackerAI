@@ -19,7 +19,7 @@
                 <DataTemplate DataType="{x:Type  models:TabItemTemplate}">
                     <Border x:Name="TabItemBorder">
                         <StackPanel Orientation="Vertical">
-                            <Ellipse Width="55" Height="55" Margin="5,0,5,2">
+                            <Ellipse Width="45" Height="45" Margin="5,0,5,2">
                                 <Ellipse.Fill>
                                     <ImageBrush ImageSource="{Binding TabTitle.ImageUrl}" Stretch="Fill"/>
                                 </Ellipse.Fill>

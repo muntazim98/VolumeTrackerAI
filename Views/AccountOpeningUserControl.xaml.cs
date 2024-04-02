@@ -1,24 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace BankingApp.Views
 {
     /// <summary>
     /// Interaction logic for AccountOpeningUserControl.xaml
     /// </summary>
-    public partial class AccountOpeningUserControl 
+    public partial class AccountOpeningUserControl
     {
         private static AccountOpeningUserControl Instance;
         public AccountOpeningUserControl()
@@ -26,5 +13,15 @@ namespace BankingApp.Views
             InitializeComponent();
         }
         public static AccountOpeningUserControl GetSingletonInstance() => Instance ?? (Instance = new AccountOpeningUserControl());
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (!(string.IsNullOrEmpty(firstName.Text) || string.IsNullOrEmpty(middleName.Text) || string.IsNullOrEmpty(lastName.Text) ||
+                string.IsNullOrEmpty(fathersName.Text) || string.IsNullOrEmpty(mothersName.Text) || string.IsNullOrEmpty(phoneNumber.Text) ||
+                string.IsNullOrEmpty(mobileNumber.Text) || string.IsNullOrEmpty(parmanentAddress.Text) || string.IsNullOrEmpty(accountNumber.Text)))
+                MessageBox.Show("Account Created Successfully", "Success", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+            else
+                MessageBox.Show("All fields are mandatory", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
     }
 }
