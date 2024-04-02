@@ -4,3 +4,8 @@
 
 /.vs/BankingApp/FileContentIndex/03c7ecd1-8252-452b-90f3-9ae523f87579.vsidx
 /.vs/BankingApp/FileContentIndex/01e216ba-a674-4b09-b7d5-84d2092233dc.vsidx
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
